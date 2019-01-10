@@ -1,0 +1,58 @@
+git init             									-> initialise repository
+git config --list      									-> shows current configuration 
+git config --global user.name "suravarapusuryakiran"  					-> initialise username
+git config user.email									-> to see which email is configured
+git config --global user.email "suravarapusuryakiran@gmail.com" 			-> links your email
+
+echo "# git-github" >> README.md							-> creating normal file
+git add README.md									-> adding README.md to local repository indexes
+git commit -m "first commit"								-> commiting into local repository
+git remote add origin "origin git@github.com:suravarapusuryakiran/git-github.git"	-> adding/creating an origin
+git push -u origin master                                            			->pushing to origin
+git add -A										-> adding multiple file under local repo to indexes
+git commit -a -m "adding 3 files together"						-> commiting multiple files to remote repository   {To modify an existing fileonly git commit is enough you dont need to do git add again}
+git log											-> To check all the things we did in local repository
+git branch firstbranch-surya								-> creating new branch (with all the files which are there in master)
+git checkout firstbranch-surya								-> switching the branch
+git merge firstbranch-surya								->  on your are on master branch when you execute this command it merges firstbranch-surya files
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==========================================
+
+create a new repository on the command line
+ 
+echo "# git-github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:suravarapusuryakiran/git-github.git
+git push -u origin master
+
+=========================================
+push an existing repository from the command line
+
+git remote add origin git@github.com:suravarapusuryakiran/git-github.git
+git push -u origin master
+
+=========================================
